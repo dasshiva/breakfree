@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: cargo rustc -- -C panic=abort
+      run: cargo rustc -- -C panic=abort -C link-args=-nostdlib -C link-args=-nostartfiles
     - name: Run tests
       run: cargo test --verbose
