@@ -1,0 +1,3 @@
+[submodule "breakfree-kernel"]
+	path = breakfree-kernel
+	url = https://github.com/dasshiva/breakfree-kernel
